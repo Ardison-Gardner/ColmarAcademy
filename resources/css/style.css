@@ -1,0 +1,451 @@
+/* Universal styles. */
+
+html {
+  font-family: 'Questrial', sans-serif;
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
+  color:#474448;
+  background-color: #f9f9f9;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Viga', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #474448;
+  color: white;
+  font-weight: normal;
+  width: 90%;
+  padding: 8px 0px;
+  transition: all 0.5s linear;
+}
+
+.button:hover {
+  background-color: #376193;
+}
+
+/* Header. */
+
+header {
+  height:64px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img:first-child {
+   display: block;
+}
+
+.logo-icon {
+  display:none;
+}
+
+.logo p {
+  color: #979797;
+  font-size: 1.2rem;
+}
+
+.logo p:first-of-type {
+  font-weight: 900;
+  color: #474448;
+}
+
+/* Navigation. */
+
+nav li{
+  display: inline-flex;
+  padding: 8px;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-weight: 500;
+  color: #7d7984;
+  transition: all 0.5s linear;
+}
+
+nav li:hover {
+  text-shadow: 1px 1px 1px #7d7984;
+  font-size: 1.2rem;
+}
+
+/* Banner. */
+
+.banner {
+  display: flex;
+  width: 100%;
+  background-color: #dddddd;
+  justify-content: row;
+}
+
+.banner img {
+  width: 60%;
+  max-height: 500px;
+  padding: 32px 24px;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-text h1 {
+  color:#474448;
+  font-size: 1.5rem;
+}
+
+/* Information section. */
+
+.first-content-container {
+  width: 100%;
+  display: flex;
+}
+
+.left-container {
+  display: inline-flex;
+  width: 60%;
+  flex-direction: column;
+  margin: 32px 24px;
+}
+
+
+.left-container img {
+  max-height: 400px;
+}
+
+.author {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.right-container {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  border-left: 2px solid #dddddd;
+  padding-bottom: 32px;
+}
+
+.information {
+  display: inline-flex;
+  border-bottom: 3px solid #dddddd;
+  overflow:hidden;
+}
+
+.information:last-child {
+  background-color: #dddddd;
+}
+
+.information img {
+  height: auto;
+  flex-grow:0.35;
+  width: 35%;
+  max-height: 200px;
+  padding: 16px;
+}
+
+.mobile {
+  display: none;
+}
+
+.information-text {
+  display: inline-flex;
+  flex-grow: 0.65;
+  width: 65%;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+}
+
+.information-text p, h3 {
+  padding: 4px;
+  margin: 4px;
+}
+
+.information a {
+  color: #3694d9;
+  transition: all 150ms linear 150ms;
+}
+
+.information a:hover {
+  color: #f0961b;
+}
+
+/* Start Learning section. */
+
+.second-content-container {
+  background-color: #dddddd;
+  text-align: center;
+}
+
+.second-content-container {
+  padding: 32px;
+}
+
+.course-section {
+  display: inline-flex;
+  flex-flow: wrap;
+  margin: 0 72px;
+}
+
+.course {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 16px;
+  max-width: 30%;
+  text-align: left;
+}
+
+.course img {
+  padding-bottom: 24px;
+  height: auto;
+}
+
+.course h3 {
+  margin-left: 16px;
+  padding-left: 16px;
+}
+
+.course p {
+  font-weight: normal;
+  padding: 4px 16px;
+  margin: 4px 16px;
+}
+
+.course p:last-child {
+  padding-bottom: 24px;
+}
+
+/* Thesis section. */
+
+.third-content-container {
+  display: flex;
+  width: 100%;
+  background-color: #f9f9f9;
+  flex-direction: column;
+}
+
+.left-container video{
+  height: 400px;
+}
+
+.third-content-container h2:first-of-type {
+  text-align: center;
+}
+
+.third-content-container .information:first-child {
+  background-color: #dddddd;
+}
+
+.third-content-container .information:last-child {
+  background-color: #f9f9f9;
+  border: none;
+}
+
+/* Footer. */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-top: 2px solid #dddddd;
+  background-color: white;
+}
+
+.footer {
+  display: inline-flex;
+  justify-content: flex-start;
+  height: 32px;
+
+}
+
+footer a {
+   justify-content: flex-end;
+}
+
+/* Media Queries. */
+
+@media screen and (max-width:470px) {
+  .body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+nav li {
+  display: none;
+}
+
+.logo {
+  display: inline-flex;
+  justify-content: space-between;
+  width:100%;
+}
+
+.logo-icon {
+  display: inherit;
+}
+
+.logo-icon img{
+  transition: all 0.5s linear;
+}
+
+.logo-icon img:hover {
+  width: 150%;
+}
+
+.logo p {
+  display: none;
+}
+
+.banner {
+  flex-direction: column;
+  text-align: center;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  padding: 0;
+
+}
+
+.button {
+  margin-bottom: 32px;
+  background-color: #979797;
+}
+
+.first-content-container .left-container{
+  display: none;
+}
+
+.right-container {
+  width: 100%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 16px;
+  border: none;
+}
+
+.information img {
+  width: 100%;
+  height: auto;
+}
+
+.desktop {
+  display:none;
+}
+
+.mobile {
+  display: flex;
+}
+
+.information-text {
+  width: 100%;
+  padding: 16px;
+}
+
+.information:last-of-type {
+  background-color: #f9f9f9;
+}
+
+.second-content-container {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background-color: #f9f9f9;
+  padding: 0 0 32px 0 ;
+  margin:0;
+  width:100%;
+}
+
+.course-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin:0;
+  width: 100%;
+  align-items: center;
+}
+
+.course {
+  max-width: 100%;
+  width: 90%;
+  margin: 4px;
+  background-color: #dddddd;
+  text-align: center;
+}
+
+.course img, .course p{
+  display:none;
+}
+
+.third-content-container {
+  padding: 0;
+  margin: 0;
+}
+
+.third-content-container .left-container {
+  display: block;
+  width: 100%;
+  padding:0;
+  margin:0;
+}
+
+.third-content-container .right-container  {
+  display: none;
+}
+
+video {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: fill;
+}
+
+.third-content-container h2:first-child{
+  display:flex;
+  justify-content: center;
+}
+
+.third-content-container h2, .third-content-container .quote {
+  display: none;
+}
+
+footer {
+  font-size: 0.7rem;
+}
+}
